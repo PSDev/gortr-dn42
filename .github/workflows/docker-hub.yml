@@ -29,4 +29,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: hameno/gortr-dn42:${{ steps.date.outputs.date }}-${{ env.GITHUB_RUN_ID }},hameno/gortr-dn42:latest
+          tags: hameno/gortr-dn42:${{ steps.date.outputs.date }}-${{ github.run_id }},hameno/gortr-dn42:latest
